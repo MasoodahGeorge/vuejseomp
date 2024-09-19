@@ -47,7 +47,8 @@ export default {
   align-items: center;
   min-height: 100vh;
     /* started changes */
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true');
+  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
+  background-color: #EEEEF0;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: cover;
@@ -92,7 +93,7 @@ h2 {
   justify-content: center;
   align-items: center;
     /* started changes */
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true');
+  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -142,7 +143,7 @@ h2 {
   min-height: 100vh;
   width: 100%;
     /* started changes */
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true');
+  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: cover;
@@ -190,7 +191,7 @@ h2 {
   min-height: 100vh;
   width: 100%;
     /* started changes */
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true');
+  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: cover;
@@ -238,7 +239,7 @@ h2 {
   min-height: 100vh;
   width: 100%;
     /* started changes */
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true');
+  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: cover;
@@ -285,7 +286,7 @@ h2 {
   min-height: 100vh;
   width: 100%;
     /* started changes */
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true');
+  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: cover;
