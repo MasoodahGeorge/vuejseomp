@@ -62,10 +62,6 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    /* padding: 20px; */
-    /* background-image: url('https://i.postimg.cc/pL2pKB9Y/home.png'); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
     background-position: center;
     text-align: center;
   }

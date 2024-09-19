@@ -1,29 +1,19 @@
 <template>
   <div class="about" id="about">
-    <div class="container text-center">
-      <BR></BR>
-      <BR></BR>
-      <BR></BR>
-      <BR></BR>
-  <div class="row align-items-center">
-    <div class="col">
-      <img src="https://raw.githubusercontent.com/MasoodahGeorge/p3img/main/mememe2.jpg" class="profile-image">
-    </div>
-    <div class="col">
-      <div v-if="about" class="about-container">
-        <BR></BR>
-        <BR></BR>
-        <h1>{{ about.heading }}</h1>
-        <p>{{ about.description }}</p>
+    <div class="container">
+      <div class="row align-items-center">
+        <div>
+          <div v-if="about" class="about-container">
+            <h1>{{ about.heading }}</h1>
+            <p>{{ about.description }}</p>
+          </div>
+          <div v-else class="loading">
+            Loading...
+          </div>
+        </div>
       </div>
-      <div v-else class="loading">
-        Loading...
-      </div>
-    </div>
     </div>
   </div>
-</div>
-
 </template>
 
 <script>
@@ -57,31 +47,20 @@ export default {
 
 <style scoped>
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 5rem;
+  background-image: none;
   text-align: center;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  /* started changes */
 }
 
 .about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(243, 243, 243, 0.5); /* slightly transparent background */
+  background-color: rgb(255, 255, 255);
   padding: 5%;
-  border-radius: 10px;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .profile-image {
   width: 100%;
-  height: auto;
 }
 
 h1 {
@@ -101,70 +80,59 @@ p {
   color: #999;
 }
 
+/* Responsive styles */
 @media only screen and (max-width: 300px) {
   .profile-image {
     width: 100%;
   }
   .about-container {
-      padding: 3%;
-    }
-    h1 {
-      font-size: 2em;
-  
-    }
-    p {
-      font-size: 100%;
-    }
+    padding: 3%;
   }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 100%;
+  }
+}
 
-  /* Medium screens (max-width: 600px) */
-  @media only screen and (max-width: 600px) {
-   .profile-image {
-      height: 30vh;
-      width: 80%;
-    }
-   .about-container {
-      padding: 4%;
-    }
-    h1 {
-      font-size: 2.2em;
-    }
-    p {
-      font-size: 1.1em;
-    }
-  }
+/* Medium screens (max-width: 600px) */
+@media only screen and (max-width: 600px) {
 
-  /* Large screens (max-width: 900px) */
-  @media only screen and (max-width: 900px) {
-   .profile-image {
-      height: 40vh;
-      width: 60%;
-    }
-   .about-container {
-      padding: 5%;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    p {
-      font-size: 1.2em;
-    }
+  .about-container {
+    padding: 4%;
   }
+  h1 {
+    font-size: 2.2em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
 
-  /* Extra large screens (min-width: 1200px) */
-  @media only screen and (min-width: 1200px) {
-   .profile-image {
-      height: 50vh;
-      width: 50%;
-    }
-   .about-container {
-      padding: 6%;
-    }
-    h1 {
-      font-size: 3em;
-    }
-    p {
-      font-size: 1.5em;
-    }
+/* Large screens (max-width: 900px) */
+@media only screen and (max-width: 900px) {
+  .about-container {
+    padding: 5%;
   }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* Extra large screens (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {
+  .about-container {
+    padding: 6%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
 </style>

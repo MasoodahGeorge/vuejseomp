@@ -1,19 +1,27 @@
 <template>
   <div class="home" id="home">
-    <div v-if="home" class="profile-container">
-      <!-- <img :src="home.image" alt="Profile Image" class="profile-image"> -->
-      <h1>{{ home.name }} {{ home.surname }}</h1>
-      <h2>{{ home.title }}</h2>
-    </div>
-    <div v-else class="loading">
-      Loading...
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" v-if="home">
+          <h1>{{ home.name }} {{ home.surname }}</h1>
+            <h2>{{ home.title }}</h2>
+        </div>
+        <div class="col-md-6">
+          <div v-if="home" class="profile-container">
+            <img :src="home.image" alt="Profile Image" class="profile-image">
+          </div>
+          <div v-else class="loading">
+            Loading...
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
+
+
 <script>
-// import axios from 'axios';
-// import Navbar from '../components/NavbarComp.vue'
 
 export default {
   name: 'HomeView',
@@ -42,286 +50,50 @@ export default {
 
 <style scoped>
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-    /* started changes */
-  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
-  background-color: #EEEEF0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  text-align: center;
-}
-
-
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background: rgba(243, 243, 243, 0.9); */
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
-  border-radius:10px;
-}
-
-
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 500%;
-}
-
-h2 {
-  font-size: 100%;
-  color: white;
-}
-
-.loading {
-  font-size: 100%;
-  color: #5d5d5d;
-}
-
-@media only screen and (min-width: 300px) {
-  .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    /* started changes */
-  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: cover;
   height: 100vh;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  text-align: center;
+  /* padding: 3rem; */
+  background-color: #ead0d1;
+  padding-top: 10rem;
 }
-
 
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: rgba(243, 243, 243, 0.9);
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border-radius:10px; */
+}
+
+.profile-image {
+  width: 80%;
 }
 
 h1 {
   margin: 0;
   color: white;
-  font-size: 300%;
+  font-size: 3em; /* Adjust font size */
 }
 
 h2 {
-  margin-top: 5%;
-  font-size: 80%;
+  font-size: 1.5em; /* Adjust font size */
   color: white;
 }
 
 .loading {
-  font-size: 100%;
+  font-size: 1.5em;
   color: #5d5d5d;
 }
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .profile-container {
+    padding: 3%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
 }
-
-@media only screen and (min-width: 481px) {
-  .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-    /* started changes */
-  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  text-align: center;
-}
-
-
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background: rgba(243, 243, 243, 0.9); */
-  /* padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border-radius:10px; */
-}
-
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 300%;
-}
-
-h2 {
-  font-size: 80%;
-  color: white;
-}
-
-.loading {
-  font-size: 100%;
-  color: #5d5d5d;
-}
-}
-
-/* Example of targeting smaller tablets and larger phones */
-@media only screen and (min-width: 641px) {
-  .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-    /* started changes */
-  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  text-align: center;
-}
-
-
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background: rgba(243, 243, 243, 0.9); */
-  /* padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border-radius:10px; */
-}
-
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 300%;
-}
-
-h2 {
-  font-size: 80%;
-  color: white;
-}
-
-.loading {
-  font-size: 100%;
-  color: #5d5d5d;
-}
-}
-
-/* Example of targeting tablets and larger phones */
-@media only screen and (min-width: 769px) {
-  .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-    /* started changes */
-  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  text-align: center;
-}
-
-
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background: rgba(243, 243, 243, 0.9); */
-  /* padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border-radius:10px; */
-}
-
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 300%;
-}
-
-h2 {
-  font-size: 80%;
-  color: white;
-}
-
-.loading {
-  font-size: 100%;
-  color: #5d5d5d;
-}}
-
-/* Example of targeting tablets and smaller desktops */
-@media only screen and (min-width: 1025px) {
-  .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-    /* started changes */
-  /* background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/lmaoo.png?raw=true'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: cover;
-  background-repeat: repeat-y; */
-  text-align: center;
-}
-
-
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background: rgba(243, 243, 243, 0.9); */
-  /* padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  border-radius:10px; */
-}
-
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 500%;
-}
-
-h2 {
-  font-size: 100%;
-  color: white;
-}
-
-.loading {
-  font-size: 100%;
-  color: #5d5d5d;
-}}
-
 </style>

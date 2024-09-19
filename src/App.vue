@@ -60,32 +60,27 @@ export default {
 
 <style scoped>
 #about-section {
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/Untitled%20design%20(13)%20copy.png?raw=true');
   background-repeat: none;
-  background-size: cover;
-}
-#resume-section {
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/Untitled%20design%20(15).png?raw=true');
-  background-repeat: none;
+  background-color: #ead0d1;
   background-size: cover;
 }
 #skills-section {
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/0.png?raw=true');
   background-repeat: none;
+  background-color: #ead0d1;
   background-size: cover;
 }
 #testimonials-section {
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/0.png?raw=true');
+  background-color: #ead0d1;
   background-repeat: none;
   background-size: cover;
 }
 #projects-section {
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/3.png?raw=true');
+  background-color: #ead0d1;
   background-repeat: none;
   background-size: cover;
 }
 #contact-section {
-  background-image: url('https://github.com/MasoodahGeorge/p3img/blob/main/4.png?raw=true');
+  background-color: #ead0d1;
   background-repeat: none;
   background-size: cover;
 }

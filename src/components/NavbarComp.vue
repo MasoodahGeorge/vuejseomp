@@ -73,7 +73,7 @@ export default {
 }
 
 #nv {
-  background-color: #EEEEF0;
+  background-color: transparent;
 }
 
 .fixed-top {

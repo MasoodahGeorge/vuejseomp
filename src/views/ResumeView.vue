@@ -81,6 +81,7 @@
   .resume {
     text-align: center;
     height: 100vh;
+    background-color: #d9bbbd;
   }
   
   .resume-container {
@@ -88,7 +89,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: rgba(243, 243, 243, 0.5); /* slightly transparent background */
     padding: 5%;
     border-radius: 10px;
     width: 50%;
