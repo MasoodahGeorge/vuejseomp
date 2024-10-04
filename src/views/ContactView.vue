@@ -27,13 +27,14 @@
           </div>
 
           <div class="col-md-6" style="padding:1rem;">
-            <div v-for="(icon, index) in contact.icons" :key="index" class="social-icon" style="padding:3px;">
-              <a :href="icon.link" target="_blank">
-                <img :src="icon.icon" alt="Contact Icon" class="contact-icon">
-              </a>
+            <div class="social-icons">
+              <div v-for="(icon, index) in contact.icons" :key="index" class="social-icon" style="display: flex; align-items: center; margin-bottom: 10px;">
+                <a :href="icon.link" target="_blank" style="display: flex; align-items: center;">
+                  <img :src="icon.icon" alt="Contact Icon" class="contact-icon">
+                  <span style="margin-left: 8px;"></span>
+                </a>
+              </div>
             </div>
-              <p>My cell: 062 163 3155</p>
-              <p>Cape Town, Western Cape</p>
           </div>
         </div>
       </form>
@@ -92,6 +93,9 @@ export default {
   margin-bottom: 5%;
 }
 
+.col-md-6{
+margin:0 auto;
+}
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -105,20 +109,22 @@ p {
   margin-bottom: 20px;
 }
 
-.icons {
+.social-icons {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items:center;
+  margin:0 auto;
 }
 
 .social-icon {
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 .contact-icon {
-  width: 50px; /* Adjusted size for better responsiveness */
-  height: 50px;
+  width: 30px; /* Adjusted size for better responsiveness */
+  height: 30px;
   border-radius: 9999px;
 }
 
