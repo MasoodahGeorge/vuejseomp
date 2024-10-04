@@ -70,11 +70,11 @@ export default {
 h1 {
   margin: 0;
   color: white;
-  font-size: 3em; /* Adjust font size */
+  font-size: 3em;
 }
 
 h2 {
-  font-size: 1.5em; /* Adjust font size */
+  font-size: 1.5em;
   color: white;
 }
 

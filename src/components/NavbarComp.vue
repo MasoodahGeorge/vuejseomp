@@ -67,6 +67,14 @@ export default {
 </script>
 
 <style scoped>
+.nav-sec{
+  font-family: "Fredoka", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
 
 .d-inline-block {
   height: 100px;
@@ -86,13 +94,13 @@ export default {
 
 .offcanvas-body:not(.navbar-nav) {
   color: rgb(51, 51, 51);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .nav-link {
   color: inherit;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
+  color:#666;
 }
 
 .nav-link:hover {

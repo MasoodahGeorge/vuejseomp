@@ -87,7 +87,7 @@ export default {
 .resume {
   text-align: center;
   padding: 1rem;
-  background-color: #d9bbbd;
+  background-color: #ead0d1;
 }
 
 .resume-container {

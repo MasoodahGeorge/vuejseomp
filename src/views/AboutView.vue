@@ -45,6 +45,7 @@ export default {
 </script>
 
 <style scoped>
+
 .about {
   padding: 5rem 0;
   text-align: center;

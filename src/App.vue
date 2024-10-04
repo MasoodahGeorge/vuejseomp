@@ -86,11 +86,14 @@ export default {
 }
 
 #app {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fredoka", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   text-align: center;
-  color: #2c4950;
+  color: #666;
   background-color: #F3F3F3;
 }
 
@@ -108,7 +111,8 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(255, 172, 237); /* Optional: add a semi-transparent background */
-  z-index: 1000; /* Ensure it's above other content */
+  background: rgb(255, 172, 237);
+  z-index: 1000;
 }
+
 </style>

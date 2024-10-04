@@ -9,7 +9,9 @@
           class="col-lg-4 col-md-6 col-sm-12 mb-4"
         >
           <div class="card project-card">
-            <img :src="item.image" :alt="item.name" class="card-img-top project-image">
+            <div class="image-container">
+              <img :src="item.image" :alt="item.name" class="card-img-top project-image">
+            </div>
             <div class="card-body">
               <h5 class="card-title">{{ item.name }}</h5>
               <p class="card-text">{{ item.description }}</p>
@@ -67,11 +69,11 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5rem 0; /* Added padding for vertical spacing */
+  padding: 5rem 0;
 }
 
 .projects-container {
-  padding: 2rem; /* Reduced padding for better layout */
+  padding: 2rem;
   border-radius: 10px;
   width: 100%;
   margin: 0 auto;
@@ -84,25 +86,27 @@ h1 {
 }
 
 .project-card {
+  padding:;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 350px;
+}
+
+.image-container {
+  height: 200px;
+  overflow: hidden;
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-image {
-  opacity: 0.7;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-body {
   padding: 20px;
+  height: 100px;
 }
 
 .overlay {

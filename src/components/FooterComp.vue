@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-      <p>&copy; {{ currentYear }} Masoodah George. All rights reserved.</p>
+      <p style="color:#666;">&copy; {{ currentYear }} Masoodah George. All rights reserved.</p>
     </footer>
   </template>
   
@@ -17,12 +17,16 @@
   
   <style scoped>
   .footer {
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #18325B;
-    color: rgb(255, 255, 255);
+    background-color: #fff;
     width: 100%;
     text-align: center;
   }

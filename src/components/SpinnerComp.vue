@@ -1,8 +1,11 @@
 <template>
-    <div class="spinner" v-if="isLoading">
+  <div class="main">
+  <div class="spinner" v-if="isLoading">
       <div class="double-bounce1"></div>
       <div class="double-bounce2"></div>
     </div>
+  </div>
+    
   </template>
   
   <script>
@@ -17,6 +20,13 @@
   </script>
   
   <style scoped>
+  .main{
+  align-content:center;
+  margin:0 auto;
+  height:100vh;
+  width:100%;
+  background-color:#fff;
+  }
   .spinner {
     width: 40px;
     height: 40px;
@@ -29,7 +39,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #e8b5cc;
     opacity: 0.6;
     position: absolute;
     top: 0;

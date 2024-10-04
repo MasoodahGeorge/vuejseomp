@@ -4,30 +4,39 @@
       <h1>{{ contact.heading }}</h1>
       <p>{{ contact.paragraph }}</p>
       <form action="https://formspree.io/f/mpzvvdbv" method="POST" class="contact-form">
-        <div v-for="(field, index) in contact.form.fields" :key="index" class="form-group">
-          <label :for="field.label">{{ field.label }}</label>
-          <input v-if="field.type !== 'textarea'" 
-                 :type="field.type" 
-                 :placeholder="field.placeholder" 
-                 :id="field.label" 
-                 :name="field.label" 
-                 class="form-control" 
-                 required>
-          <textarea v-else 
-                    :placeholder="field.placeholder" 
-                    :id="field.label" 
-                    :name="field.label" 
-                    rows="4" 
-                    class="form-control" 
-                    required></textarea>
+        <div class="row">
+          <div class="col-md-6">
+            <div v-for="(field, index) in contact.form.fields" :key="index" class="form-group">
+              <label :for="field.label">{{ field.label }}</label>
+              <input v-if="field.type !== 'textarea'" 
+                     :type="field.type" 
+                     :placeholder="field.placeholder" 
+                     :id="field.label" 
+                     :name="field.label" 
+                     class="form-control" 
+                     required>
+              <textarea v-else 
+                        :placeholder="field.placeholder" 
+                        :id="field.label" 
+                        :name="field.label" 
+                        rows="4" 
+                        class="form-control" 
+                        required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">{{ contact.form.submitButtonText }}</button>
+          </div>
+
+          <div class="col-md-6" style="padding:1rem;">
+            <div v-for="(icon, index) in contact.icons" :key="index" class="social-icon" style="padding:3px;">
+              <a :href="icon.link" target="_blank">
+                <img :src="icon.icon" alt="Contact Icon" class="contact-icon">
+              </a>
+            </div>
+              <p>My cell: 062 163 3155</p>
+              <p>Cape Town, Western Cape</p>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">{{ contact.form.submitButtonText }}</button>
       </form>
-      <div class="icons">
-        <a v-for="(icon, index) in contact.icons" :key="index" :href="icon.link" target="_blank">
-          <img :src="icon.icon" alt="Contact Icon" class="contact-icon">
-        </a>
-      </div>
     </div>
     <div v-else class="loading">
       Loading...
@@ -36,8 +45,6 @@
 </template>
 
 <script>
-// import axios from 'axios';
-
 export default {
   name: 'ContactView',
   data() {
@@ -80,7 +87,7 @@ export default {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 90%; /* Adjusted width for responsiveness */
-  max-width: 600px; /* Maximum width for larger screens */
+  max-width: 800px; /* Maximum width for larger screens */
   margin: 0 auto;
   margin-bottom: 5%;
 }
@@ -105,11 +112,14 @@ p {
   margin-bottom: 20px;
 }
 
+.social-icon {
+  margin-bottom: 10px;
+}
+
 .contact-icon {
   width: 50px; /* Adjusted size for better responsiveness */
   height: 50px;
   border-radius: 9999px;
-  padding: 10%;
 }
 
 .contact-form {

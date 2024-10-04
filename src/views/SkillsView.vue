@@ -57,16 +57,16 @@ export default {
 
 <style scoped>
 .skills {
-  padding: 5% 0; /* Adjust padding as needed */
+  padding: 5% 0; 
 }
 
 .skills-container {
   text-align: center;
-  max-width: 80%; /* Maintain responsiveness */
+  max-width: 80%;
   margin: 0 auto;
-  background-color: rgba(243, 243, 243, 0.5);
+  background-color: #ead0d1;
   border-radius: 10px;
-  padding: 2%; /* Adjust padding as needed */
+  padding: 2%;
 }
 
 h1 {
@@ -79,11 +79,11 @@ h1 {
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Example hover effect, adjust as needed */
-}
+  transform: translateY(-10px);
+  }
 
 .card-img-top {
-  width: 100%; /* Ensure images are responsive */
+  width: 100%;
   height: auto;
 }
 
