@@ -51,12 +51,13 @@ export default {
 <style scoped>
 .home {
   height: 100vh;
-  /* padding: 3rem; */
   background-color: #ead0d1;
   padding-top: 10rem;
+  padding-bottom: 3rem;
 }
 
 .profile-container {
+  margin:0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;

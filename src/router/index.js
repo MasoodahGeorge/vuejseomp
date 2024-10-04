@@ -7,43 +7,18 @@ import SkillsView from '../views/SkillsView.vue';
 import ProjectsView from '../views/ProjectsView.vue'
 import ContactView from '../views/ContactView.vue'
 import FooterComp from '../components/FooterComp.vue';
-// import NavbarComp from '../components/NavbarComp.vue';
 
 const routes = [
   {
-    // path: '/',
-    // component: Layout,
-    // children: [
-    //   {
-    //     path: '',
-    //     name: 'home',
-    //     component: HomeView,
-    //   },
-    //   {
-    //     path: 'about',
-    //     name: 'about',
-    //     component: AboutView,
-    //   },
-    //   {
-    //     path: 'resume',
-    //     name: 'resume',
-    //     component: ResumeView,
-    //   },
-    //   {
-    //     path: 'skills',
-    //     name: 'skills',
-    //     component: SkillsView,
-    //   },
-    // ],
     path: '/',
     components: {
       default: HomeView,
       about: AboutView,
       resume: ResumeView,
       skills: SkillsView,
-      projects:ProjectsView,
-      contact:ContactView,
-      FooterComp:FooterComp
+      projects: ProjectsView,
+      contact: ContactView,
+      FooterComp: FooterComp
     }
   },
 ];

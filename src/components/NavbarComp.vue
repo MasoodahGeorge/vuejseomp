@@ -81,7 +81,7 @@ export default {
 }
 
 .fixed-top.scrolled {
-  background-color: rgba(0, 0, 0, 0.7); /* Change to desired color when scrolled */
+  background-color: #fff;
 }
 
 .offcanvas-body:not(.navbar-nav) {
