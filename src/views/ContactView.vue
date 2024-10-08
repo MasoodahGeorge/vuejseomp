@@ -28,12 +28,27 @@
 
           <div class="col-md-6" style="padding:1rem;">
             <div class="social-icons">
-              <div v-for="(icon, index) in contact.icons" :key="index" class="social-icon" style="display: flex; align-items: center; margin-bottom: 10px;">
+              <!-- <div v-for="(icon, index) in contact.icons" :key="index" class="social-icon" style="display: flex; align-items: center; margin-bottom: 10px;">
                 <a :href="icon.link" target="_blank" style="display: flex; align-items: center;">
                   <img :src="icon.icon" alt="Contact Icon" class="contact-icon">
                   <span style="margin-left: 8px;"></span>
                 </a>
-              </div>
+              </div> -->
+              <ul class="contact-info list-unstyled d-flex flex-column align-items-start mb-4">
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="https://i.postimg.cc/X7qC7hH0/email.jpg" alt="Email Icon" class="contact-icon me-2">
+          <a href="mailto:oodasbusiness@gmail.com" class="nav-link p-0 text-muted">oodasbusiness@gmail.com</a>
+        </li>
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="https://github.com/MasoodahGeorge/vuejseomp/blob/main/Untitled%20design.png?raw=true" alt="Phone Icon" class="contact-icon me-2">
+          <a href="tel:+27621636155" class="nav-link p-0 text-muted">0621636155</a>
+        </li>
+        <li class="nav-item mb-2 d-flex align-items-center">
+          <img src="https://github.com/MasoodahGeorge/vuejseomp/blob/main/Untitled%20design%20(1).png?raw=true" alt="Location Icon" class="contact-icon me-2">
+          <a href="https://www.google.co.za/maps/place/Cape+Town/@-33.9137809,17.9966272,9z/data=!3m1!4b1!4m6!3m5!1s0x1dcc500f8826eed7:0x687fe1fc2828aa87!8m2!3d-33.922087!4d18.4231418!16zL20vMDF5ajI?hl=en&entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D" 
+             target="_blank" class="nav-link p-0 text-muted">Cape Town, Western Cape</a>
+        </li>
+      </ul>
             </div>
           </div>
         </div>
